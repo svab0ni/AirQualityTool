@@ -11,9 +11,7 @@ class IndexController extends Controller
     {
         $response = Connection::getAirQualityData()->getBody();
 
-        $xml = simplexml_load_string($response);
-        $json = json_encode($xml);
-        $data = json_decode($json,TRUE);
+        $data = parseXmlToCollection($response);
 
         dd($data);
     }
