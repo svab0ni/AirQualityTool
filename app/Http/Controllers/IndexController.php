@@ -13,6 +13,6 @@ class IndexController extends Controller
 
         $data = parseXmlToCollection($response);
 
-        dd($data);
+        return view('pages.index.index', compact('data'));
     }
 }
