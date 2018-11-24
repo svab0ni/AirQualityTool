@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CitySeeder::class);
         $this->call(ReadingSeeder::class);
         $this->call(HealthHazardLevelSeeder::class);
-        $this->call(AirQualityIndexRecordingSeeder::class);
+        $this->call(AirQualityRecordingSeeder::class);
     }
 }

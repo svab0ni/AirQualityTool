@@ -5,7 +5,7 @@ use App\Models\AirQualityRecording;
 use App\Models\HealthHazardLevel;
 use GuzzleHttp\Client;
 
-class AirQualityIndexRecordingSeeder extends Seeder
+class AirQualityRecordingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
