@@ -7,7 +7,7 @@ if(!function_exists('parseXmlToCollection'))
      * @param $response
      * @return \Illuminate\Support\Collection
      */
-    function parseXmlToCollection($response)
+    function getXmlData($response)
     {
         $xml = simplexml_load_string($response);
         $json = json_encode($xml);
