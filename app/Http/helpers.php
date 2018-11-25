@@ -34,6 +34,6 @@ if(!function_exists('aqiAverage'))
             $sum += $item->air_quality_index;
         }
 
-        return round($sum / count($aqiData), 2);
+        return round($sum / count($aqiData));
     }
 }

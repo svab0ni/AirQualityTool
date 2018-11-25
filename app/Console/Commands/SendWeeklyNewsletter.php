@@ -48,8 +48,8 @@ class SendWeeklyNewsletter extends Command
             ->get();
 
         $aqiAverage = aqiAverage($aqiData);
-        $healthHazard = HealthHazardLevel::where('air_quality_index_lower_bound', '<', $aqiAverage)
-            ->where('air_quality_index_upper_bound', '>', $aqiAverage)
+        $healthHazard = HealthHazardLevel::where('air_quality_index_lower_bound', '<=', $aqiAverage)
+            ->where('air_quality_index_upper_bound', '>=', $aqiAverage)
             ->first();
 
         $weeklyEmailRecipients = WeeklyNewsletterRecipient::where('is_verified', 1)
