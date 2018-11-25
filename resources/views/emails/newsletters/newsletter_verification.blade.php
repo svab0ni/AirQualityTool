@@ -1,0 +1,1 @@
+<a href="{{ env('APP_URL') }}/newsletter/{{ $verificationData['token'] }}/verify">CONFIRM EMAIL</a>

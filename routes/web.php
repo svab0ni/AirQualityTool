@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'IndexController@index');
+
+Route::post('/newsletter/store', 'NewsletterController@storeNewsletterSubscription');
+Route::get('/newsletter/{$token}/verify', 'NewsletterController@verifyNewsletterSubscription');
