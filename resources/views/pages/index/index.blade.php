@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<<<<<<< HEAD
 
 @section('overview')
 
@@ -6,6 +7,11 @@
     
 </div>
 
+=======
+@section('overview')
+    @include('pages.table.table')
+@stop
+>>>>>>> 2c4b66a9a44322e18ddebf40dfd108d94ad5bbe0
 @section('content')
 
 
