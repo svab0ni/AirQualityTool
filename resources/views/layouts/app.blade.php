@@ -57,12 +57,17 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .container > .charts{
+                width:100%
+            }
+           
+         
         </style>
     </head>
     <body>
     <div class="container">
 
-        <header class="row">
+        <header>
             @include('includes.header')
         </header>
 
@@ -73,11 +78,11 @@
             </div>
         </div>
 
-        <hr>
-
-        <div id="main1" class="row">
+        <div id="main1" class="charts">
             @yield('overview')
         </div>
+
+        <hr>
 
         <div class="bqn">
             <div class="bqo">
@@ -86,7 +91,7 @@
             </div>
         </div>
 
-        <div id="main" class="row">
+        <div id="main">
             @yield('content')
         </div>
     </div>

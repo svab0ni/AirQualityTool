@@ -19,7 +19,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'None.';
         $healthHazardLevel->air_quality_index_lower_bound = 0;
         $healthHazardLevel->air_quality_index_upper_bound = 50;
-        $healthHazardLevel->color = '#00E400';
+        $healthHazardLevel->color = '#aed581';
 
         $healthHazardLevel->save();
 
@@ -30,7 +30,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'Unusually sensitive people should consider reducing prolonged or heavy exertion.';
         $healthHazardLevel->air_quality_index_lower_bound = 51;
         $healthHazardLevel->air_quality_index_upper_bound = 100;
-        $healthHazardLevel->color = '#FFFF00';
+        $healthHazardLevel->color = '#4dd0e1';
 
         $healthHazardLevel->save();
 
@@ -41,7 +41,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'People with respiratory or heart disease, the elderly and children should limit prolonged exertion.';
         $healthHazardLevel->air_quality_index_lower_bound = 101;
         $healthHazardLevel->air_quality_index_upper_bound = 150;
-        $healthHazardLevel->color = '#FF7E00';
+        $healthHazardLevel->color = '#fff176';
 
         $healthHazardLevel->save();
 
@@ -52,7 +52,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'People with respiratory or heart disease, the elderly and children should avoid prolonged exertion; everyone else should limit prolonged exertion.';
         $healthHazardLevel->air_quality_index_lower_bound = 151;
         $healthHazardLevel->air_quality_index_upper_bound = 200;
-        $healthHazardLevel->color = '#FF0000';
+        $healthHazardLevel->color = '#ff8a65';
 
         $healthHazardLevel->save();
 
@@ -63,7 +63,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'People with respiratory or heart disease, the elderly and children should avoid any outdoor activity; everyone else should avoid prolonged exertion.';
         $healthHazardLevel->air_quality_index_lower_bound = 201;
         $healthHazardLevel->air_quality_index_upper_bound = 300;
-        $healthHazardLevel->color = '#8F3F97';
+        $healthHazardLevel->color = '#ba68c8';
 
         $healthHazardLevel->save();
 
@@ -74,7 +74,7 @@ class HealthHazardLevelSeeder extends Seeder
         $healthHazardLevel->precautionary_actions = 'Everyone should avoid any outdoor exertion; people with respiratory or heart disease, the elderly and children should remain indoors.';
         $healthHazardLevel->air_quality_index_lower_bound = 301;
         $healthHazardLevel->air_quality_index_upper_bound = 500;
-        $healthHazardLevel->color = '#7E0023';
+        $healthHazardLevel->color = '#ef5350';
 
         $healthHazardLevel->save();
     }
