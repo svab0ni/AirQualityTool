@@ -21,7 +21,7 @@
         text-align: center;
         vertical-align: middle;
         border-radius: 50%;
-        background: #777999;
+        background:rgb(91, 112, 101);
         color: #fff;
         font: 18px "josefin sans", arial; 
         line-height: 180px;       
