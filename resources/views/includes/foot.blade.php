@@ -10,7 +10,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
           <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <h6 class="text-uppercase font-weight-bold">Air Quality Tool</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>Air Quality Website is specialized tool for tracking and displaying the PM2.5 particles in air of the capital of BiH, Sarajevo, in order to present this serious problem to our citizents and let them know how to act according to specific case.</p>
 

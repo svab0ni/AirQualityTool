@@ -75,6 +75,10 @@
 
         <hr>
 
+        <div id="main1" class="row">
+            @yield('overview')
+        </div>
+
         <div class="bqn">
             <div class="bqo">
                 <h2 class="bqp">Statistics</h2>

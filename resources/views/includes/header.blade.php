@@ -10,7 +10,7 @@
         color: #fff;
         font: 45px "josefin sans", arial; 
         line-height: 180px;       
-        margin-left:220px;
+        margin-left:100px;
        
     }
 
@@ -24,7 +24,7 @@
         background:rgb(91, 112, 101);
         color: #fff;
         font: 18px "josefin sans", arial; 
-        line-height: 180px;       
+        line-height: 120px;       
     }
 </style>
 <div class="flex-center position-ref full-height">
@@ -61,11 +61,47 @@
                 <div class="links">
                     <a href="https://laravel.com/docs">Home</a>
                     <a href="https://laracasts.com">Statistics</a>
+                    <a href="https://laravel-news.com">Newsletter</a>
                     <a href="https://laravel-news.com">About</a>
                     
                 </div>
             </div>
-            <div class="circle1"><?php echo $data8[0]->air_quality_index?>
-                <div class="circle2">Hazard Name<?php //echo $d[0]->name?></div>
+            <div class="circle1">
+            <div class="status-tag" >
+<?php echo $dailyData[0]->air_quality_index?></div>
+                <div class="circle2">{{ $dailyData[0]->healthHazardLevel->name }}</div>
             </div>
         </div>
+
+<script>
+$(function() {
+    $('.circle1>.status-tag').each(function(){
+    	console.log($(this).text());
+      var text = $(this);
+    	switch (text) {
+     	case 1 ... 50:
+        color = '#ff0000';
+        break;
+     	case 51 ... 100:
+        color = '#6dc8bf';
+        break;
+        case 101 ... 150:
+        color = '#761289';
+        break;
+        case 151 ... 200;
+        color = '#726390':
+        break;
+        case 201 ... 300:
+        color = '#097062';
+        break;
+        case 301 ... 500:
+        color = '#86012';
+        break;
+        case 500 ... 700:
+     	default:
+        color = '#39d52d';
+    	}
+    	$(this).css('background', color);
+    });
+});
+</script>
