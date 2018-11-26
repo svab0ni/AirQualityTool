@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('overview')
+    @include('pages.table.table')
+@stop
 @section('content')
 
 <div class="row">
