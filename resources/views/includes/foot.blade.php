@@ -65,4 +65,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
 @include('modals.login')
 @include('modals.newsletter')
+@include('modals.confirmNewsletter')
+
+{{--<script>--}}
+    {{--$('#modalConfirmNewsletter').modal('toggle');--}}
+{{--</script>--}}
 

@@ -12,27 +12,23 @@
             <div class="modal-body">
                 <form id="formNewsletter" method="post" action="/newsletter/store">
                     @csrf
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" name="email" id="newsletter-email">
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" name="email" id="newsletter-email">
                     </div>
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label for="weeklySubscription">Subscribe to weekly newsletter:</label>
-                            <input type="checkbox" class="form-control" name="weeklySubscription" id="is_weekly">
-                            <label for="monthlySubscription">Subscribe to monthly newsletter:</label>
-                            <input type="checkbox" class="form-control" name="monthlySubscription" id="is_monthly">
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="weeklySubscription" id="is_weekly">
+                        <label for="weeklySubscription">Subscribe to weekly newsletter</label>
                     </div>
-                    <div class="row">
-                        <button type="submit" class="btn btn-primary" id="buttonSubscribe">Subscribe</button>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="monthlySubscription" id="is_monthly">
+                        <label for="monthlySubscription">Subscribe to monthly newsletter</label>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" id="buttonSubscribe">Subscribe</button>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -58,7 +54,8 @@
                 type: 'POST',
                 data: formData,
                 success:function(data){
-                    console.log('DONE');
+                    $('#modalNewsletter').modal('toggle');
+                    $('#modalConfirmNewsletter').modal('toggle');
                 },
                 error: function (data) {
                     console.log(data);

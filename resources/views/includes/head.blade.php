@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.js"></script>
-
+<link rel="stylesheet" href="{{ asset('css/material-icons-min.css') }}" />
 <style>
 
     html, body {
