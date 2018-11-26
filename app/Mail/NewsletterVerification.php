@@ -30,6 +30,6 @@ class NewsletterVerification extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('emails.newsletters.newsletter_verification');
     }
 }

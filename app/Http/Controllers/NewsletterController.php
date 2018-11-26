@@ -43,7 +43,7 @@ class NewsletterController extends Controller
 
         $recipient = new WeeklyNewsletterRecipient();
 
-        if(is_null($recipient->where('email', $attributes['email'])->first()))
+        if(!is_null($recipient->where('email', $attributes['email'])->first()))
         {
             return false;
         }
@@ -58,7 +58,7 @@ class NewsletterController extends Controller
     {
         $recipient = new MonthlyNewsletterRecipient();
 
-        if(is_null($recipient->where('email', $attributes['email'])->first()))
+        if(!is_null($recipient->where('email', $attributes['email'])->first()))
         {
             return false;
         }
@@ -79,7 +79,7 @@ class NewsletterController extends Controller
     {
         $weeklyRecipient = WeeklyNewsletterRecipient::where('token', $token)->first();
 
-        if(is_null($weeklyRecipient))
+        if(!is_null($weeklyRecipient))
         {
             $weeklyRecipient->is_verified = 1;
             $weeklyRecipient->save();
@@ -87,7 +87,7 @@ class NewsletterController extends Controller
 
         $monthlyRecipient = MonthlyNewsletterRecipient::where('token', $token)->first();
 
-        if(is_null($monthlyRecipient))
+        if(!is_null($monthlyRecipient))
         {
             $monthlyRecipient->is_verified = 1;
             $monthlyRecipient->save();
