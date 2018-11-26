@@ -18,3 +18,4 @@ yarn-error.log
 composer
 composer-setup.php
 composer.phar
+/app/Providers/AppServiceProvider.php
