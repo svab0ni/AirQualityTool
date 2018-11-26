@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreNewsletterSubscriptionRequest;
 use App\Mail\NewsletterVerification;
+use App\Models\AirQualityRecording;
 use App\Models\MonthlyNewsletterRecipient;
 use App\Models\WeeklyNewsletterRecipient;
 use Illuminate\Http\Request;
@@ -93,5 +94,12 @@ class NewsletterController extends Controller
         }
 
         return view('pages.newsletter.thank_you');
+    }
+
+    public function index()
+    {
+        $dailyData = AirQualityRecording::orderBy('taken_at','desc')->take(8)->get()->reverse();
+
+        return view('pages.newsletter.newsletter', compact('dailyData'));
     }
 }

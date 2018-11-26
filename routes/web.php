@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'IndexController@index');
+Route::get('/', 'IndexController@index')->name('index');
+Route::post('/login', 'Auth\LoginController@authenticated');
 
 Route::post('/newsletter/store', 'NewsletterController@storeNewsletterSubscription');
 Route::get('/newsletter/{$token}/verify', 'NewsletterController@verifyNewsletterSubscription');
 
-Route::get('/table', 'TableController@index');
-
+Route::get('/newsletter', 'NewsletterController@index')->name('newsletter');
