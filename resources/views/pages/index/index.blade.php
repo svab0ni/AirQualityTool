@@ -1,9 +1,19 @@
 @extends('layouts.app')
 
+@section('overview')
+
+<div>
+    
+</div>
+
 @section('content')
+
 
 <div class="row">
     <div class="card w-45" style="margin:2px">
+    <div class="card-header">
+        Data for last 8 hours
+    </div>
         <div class="card-body">
             <div class="col md-4"><canvas id="myChart" width="400" height="280"></canvas></div>
         </div>
