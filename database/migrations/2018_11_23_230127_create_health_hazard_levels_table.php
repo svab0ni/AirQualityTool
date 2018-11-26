@@ -22,6 +22,7 @@ class CreateHealthHazardLevelsTable extends Migration
             $table->text('precautionary_actions')->nullable()->default(null);
             $table->integer('air_quality_index_lower_bound')->nullable()->default(null);
             $table->integer('air_quality_index_upper_bound')->nullable()->default(null);
+            $table->string('color')->nullable()->default(null);
         });
     }
 
