@@ -13,6 +13,7 @@
 
 Route::get('/', 'IndexController@index')->name('index');
 Route::post('/login', 'Auth\LoginController@authenticated');
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::post('/newsletter/store', 'NewsletterController@storeNewsletterSubscription');
 Route::get('/newsletter/{$token}/verify', 'NewsletterController@verifyNewsletterSubscription');

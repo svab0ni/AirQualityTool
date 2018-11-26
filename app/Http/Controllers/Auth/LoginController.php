@@ -58,4 +58,11 @@ class LoginController extends Controller
 
         return redirect(URL::route('newsletter'));
     }
+
+    protected function logout()
+    {
+        Auth::logout();
+
+        return redirect(URL::route('newsletter'));
+    }
 }

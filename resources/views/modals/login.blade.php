@@ -35,24 +35,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function(){
-        // $('#formLogin').on('submit', function (e) {
-        //     e.preventDefault();
-        //
-        //     $.ajax({
-        //         method: $(this).attr('method'),
-        //         url: $(this).attr('action'),
-        //         data: $(this).serialize(),
-        //         dataType: "json"
-        //     })
-        //     .done(function (data) {
-        //         console.log('GOOD');
-        //     })
-        //     .fail(function (data) {
-        //
-        //     })
-        // })
-    });
-</script>
