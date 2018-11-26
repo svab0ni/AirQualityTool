@@ -60,6 +60,7 @@
             .container > .charts{
                 width:100%
             }
+           
          
         </style>
     </head>
@@ -77,11 +78,11 @@
             </div>
         </div>
 
-        <hr>
-
         <div id="main1" class="charts">
             @yield('overview')
         </div>
+
+        <hr>
 
         <div class="bqn">
             <div class="bqo">

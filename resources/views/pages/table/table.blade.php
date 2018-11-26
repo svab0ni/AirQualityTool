@@ -14,11 +14,11 @@
 
         @foreach($healthHazardData as $item)
         <tr bgcolor={{$item->color}}>
-            <td>{{$item->air_quality_index_lower_bound}}</td>
-            <td>{{$item->air_quality_index_upper_bound}}</td>
-            <td>{{$item->name}}</td>
-            <td>{{$item->description}}</td>
-            <td>{{$item->precautionary_actions}}</td>
+            <td style="color:black;font-weight: bold">{{$item->air_quality_index_lower_bound}}</td>
+            <td style="color:black;font-weight: bold">{{$item->air_quality_index_upper_bound}}</td>
+            <td style="color:black;font-weight: bold">{{$item->name}}</td>
+            <td style="color:black;font-weight: bold">{{$item->description}}</td>
+            <td style="color:black;font-weight: bold">{{$item->precautionary_actions}}</td>
         </tr>
         @endforeach
 
