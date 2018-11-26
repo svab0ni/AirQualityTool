@@ -16,7 +16,7 @@ class IndexController extends Controller
         $monthlyData = MonthlyAverageRecording::orderBy('taken_at','desc')->take(8)->get()->reverse();
         $weeklyData = WeeklyAverageRecording::orderBy('taken_at','desc')->take(8)->get()->reverse();
         //$data = HealthHazardLevel::get('name')->take(0)->get()->reverse();
-        
+
         return view('pages.index.index', ['data8 '=> $dailyData,'d30' => $monthlyData, 'week8' => $weeklyData]);
 
         
