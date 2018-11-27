@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'phone', 'phone_code', 'phone_verified'
     ];
 
     /**
@@ -27,4 +27,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Route notifications for the Nexmo channel.
+     *
+     * @param  \Illuminate\Notifications\Notification  $notification
+     * @return string
+     */
+    public function routeNotificationForNexmo($notification)
+    {
+        return $this->phone;
+    }
+
+    public function healthRiskGroups()
+    {
+        return $this->belongsToMany(HealthRiskGroup::class, 'health_risk_groups_users', 'health_risk_group_id', 'user_id');
+    }
 }

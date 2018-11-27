@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="height: 80px;">
-    <a class="navbar-brand" href="#"><img style="height: 110px;" src="/logo.png" alt=""></a>
+    <a class="navbar-brand" href="/"><img style="height: 110px;" src="/logo.png" alt=""></a>
 
     <form class="form-inline">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -13,9 +13,10 @@
                             User
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Settings</a>
+                            {{--<button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modalRiskGroup" id="openModalRiskGroup">Settings</button>--}}
+                            <a data-toggle="modal" data-target="#modalRiskGroup" id="openModalRiskGroup">Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <a class="dropdown-item" href="/logout">Log out</a>
                         </div>
                     </li>
                 @endif

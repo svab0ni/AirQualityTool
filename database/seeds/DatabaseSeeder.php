@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AirQualityRecordingSeeder::class);
         $this->call(MonthlyAverageRecordingSeeder::class);
         $this->call(WeeklyAverageRecordingSeeder::class);
+        $this->call(HealthRiskGroupSeeder::class);
     }
 }

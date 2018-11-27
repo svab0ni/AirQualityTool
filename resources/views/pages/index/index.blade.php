@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-    <div class="circles">
+    <div class="row circles" style="margin-bottom: 20px;">
         <div class="circle3"></div>
         <div class="circle6"></div>
         <div class="circle7"></div>
@@ -13,6 +13,8 @@
             <div class="container">
                 <h1 class="display-4">Current Index State Description</h1>
                 <p class="lead">{{ $dailyData[0]->healthHazardLevel->description }}</p>
+                <h1 class="card-title">Precautionary actions </h1>
+                <p class="card-text">{{ $dailyData[0]->healthHazardLevel->precautionary_actions }}</p>
             </div>
         </div>
         <div class="circle1" style="background-color:{{$dailyData[0]->healthHazardLevel->color}};">
@@ -22,9 +24,13 @@
 
         <div class="circle4"></div>
         <div class="circle5"></div>
+    </div>
 
-
-
+    <div class="bqn">
+        <div class="bqo">
+            <h2 class="bqp">Statistics</h2>
+            <hr>
+        </div>
     </div>
     <div id="accordion">
       <div class="card">

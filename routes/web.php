@@ -13,7 +13,12 @@
 
 Route::get('/', 'IndexController@index')->name('index');
 Route::post('/login', 'Auth\LoginController@authenticated');
+Route::post('/register', 'Auth\RegisterController@register');
 Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::post('/confirm/phone-number', 'UserController@confirmPhoneNumber');
+Route::post('/assign/risk-groups', 'UserController@assignRiskGroups');
+
 
 Route::post('/newsletter/store', 'NewsletterController@storeNewsletterSubscription');
 

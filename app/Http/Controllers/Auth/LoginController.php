@@ -56,13 +56,13 @@ class LoginController extends Controller
             $auth = true; // Success
         }
 
-        return redirect(URL::route('newsletter'));
+        return redirect(URL::route('index'));
     }
 
     protected function logout()
     {
         Auth::logout();
 
-        return redirect(URL::route('newsletter'));
+        return redirect(URL::route('index'));
     }
 }

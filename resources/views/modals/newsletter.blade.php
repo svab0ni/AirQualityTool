@@ -25,10 +25,13 @@
                         <label for="monthlySubscription">Subscribe to monthly newsletter</label>
 
                     </div>
-                    <div class="modal-footer">
+                    <div class="form-group">
                         <button type="submit" class="btn btn-success" id="buttonSubscribe">Subscribe</button>
                     </div>
                 </form>
+            </div>
+            <div class="modal-footer">
+                Do You want to &nbsp; <a href="">unsubscribe?</a>
             </div>
         </div>
     </div>

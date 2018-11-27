@@ -20,8 +20,11 @@
                         <label for="password" class="col-form-label">Password:</label>
                         <input type="password" class="form-control" name="password" id="password">
                     </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success" id="buttonLogin">Login</button>
+                    </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" id="buttonLogin">Prijavi se</button>
+                        Don't have an account?&nbsp; <a href="#" title="#" class="text-gray text-underline" data-dismiss="modal" data-toggle="modal" data-target="#modalRegister">Register here.</a>
                     </div>
                 </form>
             </div>

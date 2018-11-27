@@ -1,4 +1,4 @@
-<div id="modalConfirmNewsletter" class="modal fade">
+<div id="modalConfirmRegistration" class="modal fade">
     <div class="modal-dialog modal-confirm">
         <div class="modal-content">
             <div class="modal-header">
@@ -8,10 +8,9 @@
                 <h4 class="modal-title">Thank You!</h4>
             </div>
             <div class="modal-body">
-                <p class="text-center">We have received Your newsletter request, please confirm Your email address.</p>
+                <p class="text-center">You will receive SMS message with confirmation code. Please log in in order to verify your phone number.</p>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
             </div>
         </div>
     </div>

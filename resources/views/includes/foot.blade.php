@@ -66,6 +66,27 @@
 @include('modals.login')
 @include('modals.newsletter')
 @include('modals.confirmNewsletter')
+@include('modals.register')
+@include('modals.riskGroups')
+
+@if($user = Auth::user())
+
+    @if(!is_null($user->phone) && $user->phone_verified === 0)
+        @include('modals.confirmPhoneNumber')
+        <script>
+            $('#modalConfirmPhoneNumber').modal('toggle');
+        </script>
+    @endif
+    @if($user->phone_verified === 1)
+        @if(count(\App\Models\HealthRiskGroupUser::where('user_id', $user->id)->get()) === 0)
+            <script>
+                $('#modalRiskGroup').modal('toggle');
+            </script>
+        @endif
+    @endif
+@endif
+
+
 
 {{--<script>--}}
     {{--$('#modalConfirmNewsletter').modal('toggle');--}}
